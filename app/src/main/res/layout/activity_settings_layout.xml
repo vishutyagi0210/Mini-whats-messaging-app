@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsLayout"
+    android:background="@color/whatsapp_green">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/SettingsLayoutSetUserImage"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/whatsapp"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="4dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/SettingsLayoutUserNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SettingsLayoutSetUserImage"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="User Name: "
+        android:textColor="@color/white"
+        android:textSize="22dp" />
+
+    <EditText
+        android:id="@+id/SettingsLayoutUserNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SettingsLayoutSetUserImage"
+        android:layout_marginLeft="130dp"
+        android:textAlignment="center"/>
+
+
+    <TextView
+        android:id="@+id/SettingsLayoutStatusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SettingsLayoutUserNameEditText"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Status: "
+        android:textColor="@color/white"
+        android:textSize="22dp" />
+
+    <EditText
+        android:id="@+id/SettingsLayoutStatusEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SettingsLayoutUserNameTextView"
+        android:layout_marginLeft="130dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="save"
+        android:layout_below="@id/SettingsLayoutStatusEditText"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:id="@+id/SettingsLayoutButton"/>
+
+
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TextViewForSettingsLayout"
+            android:text="Scan the QR code to connect with me on LinkedIn"
+            android:textColor="@color/black"
+            android:textSize="19dp"
+            android:textAlignment="center"/>
+
+        <ImageView
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id = "@+id/SettingLayoutQrImage"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</RelativeLayout>

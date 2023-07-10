@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Mini WhatsApp</string>
+    <string name="EnterYourName">Enter Your Name</string>
+    <string name="EnterYourEMail">Enter Your E-Mail</string>
+    <string name="EnterYourPassword">Enter Your Password</string>
+    <string name="SignUp">Sigh up</string>
+    <string name="SignIn">SignIn</string>
+    <string name="Google">Google</string>
+    <string name="Facebook">Facebook</string>
+    <string name="SplachText">Hello!!</string>
+    <string name="Logout">LogOut</string>
+    <string name="Setting">Setting</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

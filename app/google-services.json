@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "716286247256",
+    "project_id": "mini-chatting-app",
+    "storage_bucket": "mini-chatting-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716286247256:android:7289435917a1cb9d8c252d",
+        "android_client_info": {
+          "package_name": "com.example.miniwhatsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716286247256-ha5lnri22hrur40ir04iuis70v6m84u9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.miniwhatsapp",
+            "certificate_hash": "99c4717e1c9542a9835d663f91792412c4966205"
+          }
+        },
+        {
+          "client_id": "716286247256-d2ifctgam50erdj2s4ntc1jlvcs38pd7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5G0ohzaL5heejrzazhi0jzDmTmmNT830"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "716286247256-d2ifctgam50erdj2s4ntc1jlvcs38pd7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

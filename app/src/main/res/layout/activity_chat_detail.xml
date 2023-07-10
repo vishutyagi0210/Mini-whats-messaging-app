@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatDetailActivity">
+
+
+    <include
+        android:id = "@+id/temp"
+        layout="@layout/toolbar_layout"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id = "@+id/ChatDetailsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temp"
+        android:layout_above="@id/ChatDetailsSendMessageButton"/>
+
+    <EditText
+        android:id="@+id/ChatDetailsEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+    <Button
+        android:id="@+id/ChatDetailsSendMessageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="send"
+        android:backgroundTint="@color/whatsapp_green"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@id/ChatDetailsEditText"/>
+</RelativeLayout>

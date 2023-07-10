@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity"
+    android:layout_marginTop="50dp">
+
+    <ImageView
+        android:id = "@+id/SignUpWhatsAppImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src = "@drawable/whatsapp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/SignUpNameEditText"
+        style="@style/EditText"
+        android:layout_below="@id/SignUpWhatsAppImageView"
+        android:hint="@string/EnterYourName"/>
+
+    <EditText
+        android:id="@+id/SignUpEMailEditText"
+        style="@style/EditText"
+        android:layout_below="@id/SignUpNameEditText"
+        android:hint="@string/EnterYourEMail"/>
+
+    <EditText
+        android:id="@+id/SignUpPasswordEditText"
+        style="@style/EditText"
+        android:layout_below="@id/SignUpEMailEditText"
+        android:inputType="textPassword"
+        android:hint="@string/EnterYourPassword"/>
+
+
+    <Button
+        android:id="@+id/SignUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SignUpPasswordEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/SignUp"
+        android:textSize="25dp"/>
+
+
+    <include layout="@layout/log_in_buttons"/>
+
+
+
+
+
+
+
+</RelativeLayout>

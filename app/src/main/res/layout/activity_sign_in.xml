@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity"
+    android:layout_marginTop="50dp">
+
+    <ImageView
+        android:id = "@+id/SignInWhatsAppImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src = "@drawable/whatsapp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/SignInEMailEditText"
+        style="@style/EditText"
+        android:layout_below="@id/SignInWhatsAppImageView"
+        android:hint="@string/EnterYourEMail"/>
+
+    <EditText
+        android:id="@+id/SignInPasswordEditText"
+        style="@style/EditText"
+        android:layout_below="@id/SignInEMailEditText"
+        android:inputType="textPassword"
+        android:hint="@string/EnterYourPassword"/>
+
+
+    <Button
+        android:id="@+id/SignInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SignInPasswordEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/SignIn"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/SignInTextViewForSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SignInButton"
+        android:text="Don't have account? Click Here"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"/>
+
+
+    <include layout="@layout/log_in_buttons"/>
+
+</RelativeLayout>
